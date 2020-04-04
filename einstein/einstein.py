@@ -1,4 +1,4 @@
-# Dev Singh, 04/01/2020, Einstein program
+# Dev Singh, 04/01/2020, Einstein
 def get_input():
     number = 0
     try:
@@ -28,4 +28,6 @@ def main():
     print("The reversed difference is ", inter1_num_reverse)
     output = inter1_num + inter1_num_reverse
     print("The reversed difference and the difference added together is ", output)
+    if (input("Type exit to quit, or press enter to play the game again: ").lower() != "exit"):
+        main()
 main()
