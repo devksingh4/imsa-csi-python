@@ -1,4 +1,4 @@
-# Dev Singh, 04/01/2020, Einstein
+# Dev Singh, 04/04/2020, Einstein Program
 def get_input():
     number = 0
     try:
