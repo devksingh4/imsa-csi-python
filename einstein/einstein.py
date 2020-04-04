@@ -1,4 +1,4 @@
-# Dev Singh, 04/04/2020, Einstein Program
+# Dev Singh, 04/04/2020, einstein.py
 def get_input():
     number = 0
     try:
