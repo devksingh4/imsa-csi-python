@@ -6,7 +6,7 @@ def get_input():
     except:
         print("Invalid Input")
         get_input()
-    return list(map(lambda x: int(x), list(str(number))))
+    return list(map(lambda x: int(x), list(str(number)))) # lambda and map allow me to run a function and set the return value to the new value of the list element.
 def main():
     print("""Welcome to the Albert Einstien program. \nIt is said that Albert Einstein used to take great delight in baffling friends with the puzzle below. \n I guarantee to you that I will turn any 3 digit number that you provide me within the constraints into the number 1089.  \n The number you provide me must: \n - be a 3 digit number \n - have the first and list digits differ by at least 2 \n Lets play! \n""")
     num0 = []
@@ -21,10 +21,10 @@ def main():
     print("Your number is: ", int_num)
     int_num_reverse = int("".join(map(str, list(reversed(num0)))))
     print("The reverse of your number is: ", int_num_reverse)
-    inter1 = list(map(lambda x: int(x), list(str(abs(int_num - int_num_reverse))))) 
-    inter1_num = int("".join(map(str, inter1)))
+    inter1 = list(map(lambda x: int(x), list(str(abs(int_num - int_num_reverse))))) # interim as map -> list
+    inter1_num = int("".join(map(str, inter1))) # join the array into one number
     print("The difference between the entered number and the reversed number is ", inter1_num)
-    inter1_num_reverse = int("".join(map(str, list(reversed(inter1)))))
+    inter1_num_reverse = int("".join(map(str, list(reversed(inter1))))) # join the array into one number
     print("The reversed difference is ", inter1_num_reverse)
     output = inter1_num + inter1_num_reverse
     print("The reversed difference and the difference added together is ", output)
