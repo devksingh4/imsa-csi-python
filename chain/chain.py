@@ -1,3 +1,4 @@
+# Dev Singh, 04/06/2020, Functions/Chain assignment
 import sys # so that I can exit the script easily
 def chain(startnum):
     anum = -1 
