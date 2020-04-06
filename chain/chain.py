@@ -1,5 +1,4 @@
 import sys # so that I can exit the script easily
-
 def chain(startnum):
     anum = -1 
     final = [startnum]
@@ -11,14 +10,12 @@ def chain(startnum):
     for item in final:
         retstr = retstr + str(item) + " - "
     return len(final), retstr[:-3] # remove the last 3 characters since they are the chain indicator, but the last number does not chain to anything. 
-
 def opt2(l, h):
     f = []
     z = list(range(l, h)) # create an iterable in the range of numbers provided
     for i in z:
         f.append(chain(i)[0])
     return max(f), f.index(max(f)) + 1
-
 def askContinue():
     se = False if input("Would you like to play again? [y/n]: ").lower() == "n" else True
     if not se: 
@@ -53,5 +50,4 @@ def main():
     else: 
         print("Invalid Option")
         main()
-
 main()
