@@ -10,12 +10,12 @@ def chain(startnum):
     for item in final:
         retstr = retstr + str(item) + " - "
     return len(final), retstr[:-3] # remove the last 3 characters since they are the chain indicator, but the last number does not chain to anything. 
-def opt2(l, h):
-    f = []
-    z = list(range(l, h)) # create an iterable in the range of numbers provided
+def opt2(low, high):
+    far = []
+    z = list(range(low, high)) # create an iterable in the range of numbers provided
     for i in z:
-        f.append(chain(i)[0])
-    return max(f), f.index(max(f)) + 1
+        far.append(chain(i)[0])
+    return max(far), far.index(max(far)) + 1
 def askContinue():
     se = False if input("Would you like to play again? [y/n]: ").lower() == "n" else True
     if not se: 
