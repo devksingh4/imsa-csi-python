@@ -3,7 +3,7 @@ def get_input():
     number = 0
     try:
         number = int(input("What is the number you would like to play with?: "))
-    except:
+    except:  #tries to run some code in the try block, and if the code doesn't work, then run the except block
         print("Invalid Input")
         get_input()
     return list(map(lambda x: int(x), list(str(number)))) # lambda and map allow me to run a function and set the return value to the new value of the list element.
@@ -14,7 +14,7 @@ def main():
     while True:  
         num0 = get_input()  
         if (len(num0) == 3 and abs(num0[0] - num0[2]) > 1):  
-            break  
+            break  # breaks out of the while loop to go to the next line.
         else: 
             print("Invalid Input")
     int_num = int("".join(map(str, num0)))
