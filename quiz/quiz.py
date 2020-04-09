@@ -1,5 +1,5 @@
 from functools import reduce
-def main():
+def realmain():
     scores = []
     while 1 == 1: 
         try:
@@ -9,4 +9,10 @@ def main():
     avg = 0 if len(scores) == 0 else reduce(lambda z, a:z+a, scores) / len(scores)
     print("The average score is: ", avg)
 
+def main():
+    while 1 == 1:
+        realmain()
+        again = input("Would you like to calculate another class? [y/n]: ").lower()
+        if again == "n":
+            break
 main()
