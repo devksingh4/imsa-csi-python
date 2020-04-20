@@ -3,8 +3,7 @@ def get_input():
     number = 0
     try:
         number = int(input("What is the number you would like to play with?: "))
-    except ValueError as e:  #tries to run some code in the try block, and if the code doesn't work, then run the except block
-        print(e)
+    except ValueError:  #tries to run some code in the try block, and if the code doesn't work, then run the except block
         print("Invalid Input")
         number = get_input()
     try:
