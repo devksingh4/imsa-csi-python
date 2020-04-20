@@ -18,7 +18,6 @@ def main():
     int_num = 0
     while True:  
         num0 = get_input()  
-        print(num0)
         if (len(num0) == 3 and abs(num0[0] - num0[2]) > 1):  
             break  # breaks out of the while loop to go to the next line.
         else: 
