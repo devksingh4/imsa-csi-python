@@ -1,9 +1,9 @@
+// Dev Singh 04/23/2020 Files program (but in C++!)
 #include <fstream> // import the fstream library to deal with files as a standard stream
 #include <iostream> // import the iostream library which allows me to output to the console and recieve input.
 #include <ctime> //allows me to get the current time to write to the file. 
 #include<stdio.h> // allows me to get space seperated input
 #include <vector> //allows for use of dynamically-sized arrays
-#include <typeinfo> // get type of a variable
 using namespace std; // use the standard namespace which contains string, cout, etc. so i dont have to keep typing std::cout
 
 // Prototype all the neccessary functions so I don't have to call them in order.
@@ -225,7 +225,3 @@ int main ()  {
     cout << "----------------------------" << endl;
     prompt();
 }
-
-
-
-
